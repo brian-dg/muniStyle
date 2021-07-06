@@ -1,17 +1,13 @@
 import react from 'react';
 
-import {Header,AppBar,ButtonUs} from './styles'; 
+import {Header,AppBar} from './styles'; 
 
 const HeaderBar = () =>{
     return (
         <>
         <Header>
             <AppBar>
-            <nav>
-                    <ButtonUs>
-                        
-                    </ButtonUs>
-            </nav>
+                NavBar
             </AppBar>
         </Header>
         </>

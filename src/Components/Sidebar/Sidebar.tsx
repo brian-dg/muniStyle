@@ -1,53 +1,28 @@
 import { Fragment} from "react";
 import React from "react";
+import {Sidebars,Ul,Li} from '../Sidebar/styles';
+import { BrowserRouter as Router, Route,Link} from 'react-router-dom';
+import * as FaIcons from 'react-icons/fa';
+
+
 const Sidebar = () => {
     return (
-        <> 
-        <div className="Sidebar">
-            <div className="logo">
-                <div>Muni</div>
-            </div>
-            <button></button>
-        </div>
+    
+        <Sidebars>
+            <Router>     
+            <Ul>
+                <Li>
+                    <Link  to="#"><FaIcons.FaHome/> Inicio </Link>
+                </Li>
+            </Ul>
 
-        <ul>
-            <li>
-                <a href="#">
-                    <i>
-                        <span>Dashboard</span>
-                    </i>
-                </a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a href="#">
-                    <i>
-                        <span>Dashboard</span>
-                    </i>
-                </a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a href="#">
-                    <i>
-                        <span>Dashboard</span>
-                    </i>
-                </a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a href="#">
-                    <i>
-                        <span>Dashboard</span>
-                    </i>
-                </a>
-            </li>
-        </ul>
-
-        </>
+            <Ul>
+                <Li>
+                    <Link to="#"><FaIcons.FaConnectdevelop/> Dashboard 1</Link>
+                </Li>
+            </Ul>
+            </Router>
+        </Sidebars>        
 
     );
 }

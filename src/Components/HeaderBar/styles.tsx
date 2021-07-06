@@ -1,25 +1,17 @@
 import Styled from 'styled-components';
 
 export const AppBar = Styled.div`
-width:95%;
-margin:auto;
-overflow:hidden;
+background-color:#ffffff;
+padding:1rem 2rem;
+border-bottom:1px solid #c3ccde;
+
 `;
 
 export const Header = Styled.header`
 width:100%;
 overFlow:Hidden;
-
-background-color:#3942D8;
-padding: 10px 10px 10px 10px;
+background-color:#ffffff;
 `;
 
-export const ButtonUs = Styled.button`
-color:#5A5A60;
-text-decoration:none;
-padding:10px 10px;
-line-height:normal;
-float:right;
 
 
-`;
